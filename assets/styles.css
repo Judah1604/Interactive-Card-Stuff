@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+/* line 3, styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/* line 9, styles.scss */
+body {
+  font-family: "Space Grotesk", sans-serif; }
+
+/* line 13, styles.scss */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 16, styles.scss */
+  .container .bg-main-desktop {
+    width: 500px;
+    height: 100vh; }
+  /* line 21, styles.scss */
+  .container .card {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    color: white; }
+    /* line 30, styles.scss */
+    .container .card img {
+      width: 445px;
+      height: 245px; }
+    /* line 35, styles.scss */
+    .container .card .card-text {
+      position: absolute;
+      top: -10px;
+      width: 445px;
+      height: 245px;
+      padding: 30px 0px 0px 30px;
+      display: grid;
+      gap: 25px; }
+      /* line 44, styles.scss */
+      .container .card .card-text h1 {
+        font-weight: lighter; }
+      /* line 48, styles.scss */
+      .container .card .card-text .card-num {
+        letter-spacing: 4px;
+        font-size: 1.8em;
+        margin-top: 1em; }
+      /* line 54, styles.scss */
+      .container .card .card-text .info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 45px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 90%; }
+        /* line 63, styles.scss */
+        .container .card .card-text .info p {
+          font-size: 0.9em; }
+    /* line 69, styles.scss */
+    .container .card .card-back {
+      margin-left: 100px; }
+      /* line 72, styles.scss */
+      .container .card .card-back .card-cvc {
+        position: absolute;
+        right: 50px;
+        bottom: 120px;
+        letter-spacing: 1px; }
+  /* line 81, styles.scss */
+  .container .content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    /* line 88, styles.scss */
+    .container .content form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 20px; }
+      /* line 93, styles.scss */
+      .container .content form .form-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 5px; }
+        /* line 99, styles.scss */
+        .container .content form .form-group label {
+          font-weight: 600;
+          letter-spacing: 2px;
+          font-size: 0.85em;
+          text-transform: uppercase; }
+        /* line 106, styles.scss */
+        .container .content form .form-group input {
+          font-family: inherit;
+          padding: 0.7em;
+          font-size: 1em;
+          border-radius: 10px;
+          border: none;
+          border: 1px solid #cbcbcb;
+          outline: none; }
+          /* line 115, styles.scss */
+          .container .content form .form-group input:focus {
+            padding: 0.7em;
+            border: double 1px transparent;
+            border-radius: 10px;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#6448fe), to(#600594));
+            background-image: linear-gradient(white, white), linear-gradient(90deg, #6448fe, #600594);
+            background-origin: border-box;
+            background-clip: padding-box, border-box; }
+          /* line 125, styles.scss */
+          .container .content form .form-group input::-webkit-input-placeholder {
+            color: #bfbfbf; }
+          .container .content form .form-group input:-ms-input-placeholder {
+            color: #bfbfbf; }
+          .container .content form .form-group input::-ms-input-placeholder {
+            color: #bfbfbf; }
+          .container .content form .form-group input::placeholder {
+            color: #bfbfbf; }
+        /* line 130, styles.scss */
+        .container .content form .form-group .warning {
+          color: #ff5252;
+          font-size: 0.8em;
+          display: none; }
+      /* line 137, styles.scss */
+      .container .content form .double {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        gap: 20px; }
+        /* line 141, styles.scss */
+        .container .content form .double .date,
+        .container .content form .double .cvc {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          gap: 5px; }
+          /* line 149, styles.scss */
+          .container .content form .double .date label,
+          .container .content form .double .cvc label {
+            text-align: left;
+            width: 100%; }
+          /* line 154, styles.scss */
+          .container .content form .double .date .inputs,
+          .container .content form .double .cvc .inputs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 10px;
+            width: 190px; }
+      /* line 162, styles.scss */
+      .container .content form .month,
+      .container .content form .year {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px; }
+    /* line 170, styles.scss */
+    .container .content .thank-you {
+      text-align: center;
+      display: none; }
+      /* line 174, styles.scss */
+      .container .content .thank-you h1 {
+        text-transform: uppercase;
+        margin: 30px 0px 20px 0px;
+        letter-spacing: 4px; }
+      /* line 180, styles.scss */
+      .container .content .thank-you p {
+        margin-bottom: 40px; }
+      /* line 184, styles.scss */
+      .container .content .thank-you button {
+        width: 400px; }
+    /* line 189, styles.scss */
+    .container .content footer {
+      position: absolute;
+      bottom: 20px; }
+      /* line 193, styles.scss */
+      .container .content footer .attribution {
+        font-size: 11px;
+        text-align: center; }
+      /* line 198, styles.scss */
+      .container .content footer .attribution a {
+        color: #3e52a3; }
+    /* line 203, styles.scss */
+    .container .content button {
+      font-family: inherit;
+      padding: 15px;
+      font-size: 1.1em;
+      border: none;
+      background-color: #21092f;
+      color: #dedddf;
+      border-radius: 10px; }
+
+/* line 215, styles.scss */
+.active {
+  display: block !important; }
+
+/* line 219, styles.scss */
+.inactive {
+  display: none !important; }
+
+/* line 223, styles.scss */
+.invalid {
+  border: 1px solid #ff5252 !important; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,98 @@
+@media screen and (max-width: 375px) {
+  /* line 2, media-queries.scss */
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    /* line 5, media-queries.scss */
+    .container .bg-main-desktop {
+      width: 100%;
+      height: 200px; }
+    /* line 10, media-queries.scss */
+    .container .card {
+      left: 15px;
+      font-size: 0.7em;
+      overflow: hidden;
+      padding-top: 11em;
+      padding-right: 5em;
+      padding-bottom: 4em;
+      top: 0px; }
+      /* line 19, media-queries.scss */
+      .container .card img {
+        width: 270px;
+        height: 150px; }
+      /* line 25, media-queries.scss */
+      .container .card .card-front {
+        z-index: 2;
+        display: grid;
+        place-items: center;
+        -webkit-box-shadow: 9px 10px 60px rgba(0, 0, 0, 0.2);
+                box-shadow: 9px 10px 60px rgba(0, 0, 0, 0.2); }
+        /* line 33, media-queries.scss */
+        .container .card .card-front .card-text {
+          width: 80%;
+          height: 150px;
+          gap: 20px;
+          top: 110px;
+          padding-left: 2em; }
+          /* line 42, media-queries.scss */
+          .container .card .card-front .card-text .logo svg {
+            -webkit-transform: scale(0.8) translate(-30px, -19px);
+                    transform: scale(0.8) translate(-30px, -19px);
+            width: 100%;
+            height: auto; }
+          /* line 49, media-queries.scss */
+          .container .card .card-front .card-text > * {
+            overflow: hidden; }
+          /* line 53, media-queries.scss */
+          .container .card .card-front .card-text .info {
+            margin-bottom: 40px; }
+          /* line 57, media-queries.scss */
+          .container .card .card-front .card-text .card-num {
+            margin: 0;
+            font-size: 1.4em;
+            letter-spacing: 2px; }
+      /* line 65, media-queries.scss */
+      .container .card .card-back {
+        margin: 0;
+        z-index: 1;
+        position: absolute;
+        left: 40px;
+        top: 30px; }
+        /* line 72, media-queries.scss */
+        .container .card .card-back .card-cvc {
+          right: 35px;
+          bottom: 73px; }
+    /* line 79, media-queries.scss */
+    .container .content {
+      padding-top: 8em;
+      font-size: 0.9em; }
+      /* line 83, media-queries.scss */
+      .container .content form {
+        width: 100%; }
+      /* line 87, media-queries.scss */
+      .container .content .form-group {
+        width: 90%;
+        margin: auto; }
+        /* line 91, media-queries.scss */
+        .container .content .form-group #cvc {
+          width: 80%; }
+        /* line 95, media-queries.scss */
+        .container .content .form-group .cvc {
+          width: 100%; }
+        /* line 99, media-queries.scss */
+        .container .content .form-group .date .inputs {
+          width: 100% !important; }
+      /* line 104, media-queries.scss */
+      .container .content footer {
+        position: static;
+        margin: 20px; }
+      /* line 109, media-queries.scss */
+      .container .content .thank-you {
+        width: 100%; }
+        /* line 112, media-queries.scss */
+        .container .content .thank-you button {
+          width: 90%; } }
+
+/*# sourceMappingURL=media-queries.css.map */
