@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   /* line 2, media-queries.scss */
   .container {
     -webkit-box-orient: vertical;
